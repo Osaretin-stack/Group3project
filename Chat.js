@@ -37,8 +37,20 @@ function Chat() {
                      This is a message
 
                     <span className="chat__timeshamp"> {new Date().toUTCString()}</span>
+                 </p>
+    
+                 <p className="chat__message chat__receiver">
+                    <span className="chat__name">Daniella</span>
+                     This is a message
+                    <span className="chat__timeshamp">{new 
+                    Date().toUTCString()}</span>
+                </p> 
 
-                   
+                <p className="chat__message">
+                    <span className="chat__name">Osaretin</span>
+                     This is a message
+                    <span className="chat__timeshamp">{new 
+                Date().toUTCString()}</span>
                 </p> 
             </div>
         </div>;
