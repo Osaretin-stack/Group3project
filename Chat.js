@@ -8,7 +8,7 @@ function Chat() {
     return  <div 
         className="chat">
             <div className="chat__header">
-                <Avatar />
+                <Avatar src="https://picsum.photos/200/300" />
 
             <div className="chat__headerInfo">  
                 <h3>Room name</h3>
