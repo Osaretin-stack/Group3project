@@ -8,7 +8,7 @@ function Sidebar() {
     return (
     <div className="sidebar">
          <div className="sidebar__header">
-            <Avatar src='flower.jpg' />
+             <Avatar src="https://picsum.photos/seed/picsum/200/300" />
          <div className="sidebar__headerRight">
 
            <IconButton>
