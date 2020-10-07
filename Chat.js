@@ -1,5 +1,5 @@
 import { Avatar, IconButton } from '@material-ui/core';
-import { AttachFile, SearchOutlined, MoreVert } from '@material-ui/icons';
+import { AttachFile, SearchOutlined, MoreVert, InsertEmoticon, Mic } from '@material-ui/icons';
 import React from 'react';
 import "./Chat.css";
 
@@ -35,23 +35,37 @@ function Chat() {
                <p className="chat__message">
                     <span className="chat__name">Osaretin</span>
                      This is a message
+                    <span className="chat__timestamp">{new Date().toLocaleString()} {}
+                    </span>
+                </p> 
 
-                    <span className="chat__timeshamp"> {new Date().toUTCString()}</span>
-                 </p>
-    
-                 <p className="chat__message chat__receiver">
+                <p className="chat__message chat__receiver">
                     <span className="chat__name">Daniella</span>
                      This is a message
-                    <span className="chat__timeshamp">{new 
-                    Date().toUTCString()}</span>
+                    <span className="chat__timestamp">{new 
+                    Date().toLocaleString()}</span>
                 </p> 
 
                 <p className="chat__message">
                     <span className="chat__name">Osaretin</span>
                      This is a message
-                    <span className="chat__timeshamp">{new 
-                Date().toUTCString()}</span>
+                    <span className="chat__timestamp">{new 
+                Date().toLocaleString()}</span>
                 </p> 
+
+            </div>
+
+                <div className="chat__footer">
+                   <InsertEmoticon />
+                    <form>
+                     <input placeholder="Type a message"
+                     type="text" />
+                     <button type="submit">send a message</button>
+                   </form>
+                   <Mic /> 
+                   
+               
+
             </div>
         </div>;
     
