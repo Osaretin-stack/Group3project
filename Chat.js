@@ -1,12 +1,15 @@
-import { Avatar, IconButton } from '@material-ui/core';
-import { AttachFile, SearchOutlined, MoreVert, InsertEmoticon, Mic } from '@material-ui/icons';
 import React from 'react';
-import "./Chat.css";
-
+import { Avatar, IconButton } from '@material-ui/core';
+import SearchOutlined from '@material-ui/icons/SearchOutlined';
+import MoreVert from '@material-ui/icons/MoreVert';
+import InsertEmoticon from '@material-ui/icons/InsertEmoticon';
+import Mic from '@material-ui/icons/Mic';
+import AttachFile from '@material-ui/icons/AttachFile';
+import './Chat.css';
 
 function Chat() {
-    return  <div 
-        className="chat">
+  return (
+       <div className="chat">
             <div className="chat__header">
                 <Avatar src="https://picsum.photos/200/300" />
 
@@ -67,8 +70,8 @@ function Chat() {
                
 
             </div>
-        </div>;
-    
+      </div>
+  );
 }
 
 export default Chat;
